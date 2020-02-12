@@ -10,7 +10,7 @@ $host = "dbrojasdev.cjw42bnplsor.us-east-1.rds.amazonaws.com"; $username = "admi
 		while($row = mysqli_fetch_object($dbrecords)) {
 				
 				echo 
-					$arr = array('id' => $row->id , 'email' => $row->email , 'password' => $row->password);
+					$arr = array('id' => $item->id , 'email' => $row->email , 'password' => $row->password);
 				 echo "<br/>";				
 					echo json_encode($arr);
 							}
