@@ -3,7 +3,7 @@ $host = "dbrojasdev.cjw42bnplsor.us-east-1.rds.amazonaws.com"; $username = "admi
 		$password = "root1234";
 		$connect = @mysqli_connect($host, $username, $password) or die("Unable to connect to host");
 		$db = @mysqli_select_db($connect, "db_1821993") or die("Cannot connect to database");
-		$sql = "select * from table3";
+		$sql = "select * from Ralph";
 		$dbrecords = mysqli_query($connect,$sql) or die("Unable to query data");
 	
 		
